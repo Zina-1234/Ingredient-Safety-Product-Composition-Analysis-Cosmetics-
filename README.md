@@ -110,37 +110,6 @@ ________________________________________
 •	Presence of restricted ingredients does not always correlate negatively with consumer ratings
 •	CMR substances represent high-priority compliance risks requiring monitoring
 ________________________________________
-📁 Repository Structure
-├── data/
-│   ├── raw/
-
-│   │   └── datasets_sources/
-
-│   │
-│   └── processed/
-│       ├── sephora_dashboard_data/
-│       ├── skincare_dashboard_data/
-│       ├── cosing_clean.csv
-│       ├── sephora_clean.csv
-│       └── skincare_clean.csv
-│
-├── notebooks/
-│   └── data_preparation_and_analysis/
-│
-├── sql/
-│   ├── db_table_creation.sql
-│   ├── regulatory_analysis_queries.sql
-│   └── ERD_Diagram/
-│
-├── tableau/
-│   └── dashboards/
-│       ├── sephora_regulatory_risk_dashboard/
-│       └── skincare_dashboard/
-│
-├── presentation/
-│   └── Ingredient_safety_and_product_composition_analysis_Presentation/
-│
-├── README.md ________________________________________
 🚀 Career Relevance
 This project demonstrates:
 •	Strong SQL and data analytics skills
