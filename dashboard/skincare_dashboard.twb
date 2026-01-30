@@ -1,0 +1,870 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='skincare_dashboard_data' inline='true' name='federated.1yz5yek1u3762a129vih91aof7g6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='skincare_dashboard_data' name='textscan.1j9aw6w0si1elk14yrxhh1slltc0'>
+            <connection class='textscan' directory='C:/Users/ZINA/Desktop/IRONHACK/Week_8/PROJECT/data/processed' filename='skincare_dashboard_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1j9aw6w0si1elk14yrxhh1slltc0' name='skincare_dashboard_data.csv' table='[skincare_dashboard_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='string' name='brand' ordinal='0' />
+            <column datatype='string' name='product_name' ordinal='1' />
+            <column datatype='string' name='product_type' ordinal='2' />
+            <column datatype='integer' name='price' ordinal='3' />
+            <column datatype='real' name='rating' ordinal='4' />
+            <column datatype='integer' name='restricted_ingredient_count' ordinal='5' />
+            <column datatype='integer' name='cmr_count' ordinal='6' />
+            <column datatype='string' name='has_restricted_ingredient' ordinal='7' />
+            <column datatype='string' name='has_cmr' ordinal='8' />
+            <column datatype='real' name='restricted_pct' ordinal='9' />
+            <column datatype='real' name='cmr_pct' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[brand]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>brand</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_type]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>product_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>restricted_ingredient_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[restricted_ingredient_count]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>restricted_ingredient_count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cmr_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cmr_count]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>cmr_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_restricted_ingredient</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[has_restricted_ingredient]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>has_restricted_ingredient</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_cmr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[has_cmr]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>has_cmr</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>restricted_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[restricted_pct]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>restricted_pct</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cmr_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cmr_pct]</local-name>
+            <parent-name>[skincare_dashboard_data.csv]</parent-name>
+            <remote-alias>cmr_pct</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='skincare_dashboard_data.csv' datatype='table' name='[__tableau_internal_object_id__].[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]' role='measure' type='quantitative' />
+      <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+      <column caption='Cmr Count' datatype='integer' name='[cmr_count]' role='measure' type='quantitative' />
+      <column caption='Cmr Pct' datatype='real' name='[cmr_pct]' role='measure' type='quantitative' />
+      <column caption='Has Cmr' datatype='string' name='[has_cmr]' role='dimension' type='nominal' />
+      <column caption='Has Restricted Ingredient' datatype='string' name='[has_restricted_ingredient]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='Product Type' datatype='string' name='[product_type]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Restricted Ingredient Count' datatype='integer' name='[restricted_ingredient_count]' role='measure' type='quantitative' />
+      <column caption='Restricted Pct' datatype='real' name='[restricted_pct]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ZINA/AppData/Local/Temp/TableauTemp/#TableauTemp_1ge541c0fgopdb12s8hfi03hq1pi.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/28/2026 09:32:35 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>brand</remote-alias>
+              <ordinal>0</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1352</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>4</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>restricted_ingredient_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[restricted_ingredient_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>restricted_ingredient_count</remote-alias>
+              <ordinal>5</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cmr_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cmr_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cmr_count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_restricted_ingredient</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[has_restricted_ingredient]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_restricted_ingredient</remote-alias>
+              <ordinal>7</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_cmr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[has_cmr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_cmr</remote-alias>
+              <ordinal>8</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>restricted_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[restricted_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>restricted_pct</remote-alias>
+              <ordinal>9</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cmr_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cmr_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cmr_pct</remote-alias>
+              <ordinal>10</ordinal>
+              <family>skincare_dashboard_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='skincare_dashboard_data.csv' id='skincare_dashboard_data.csv_46F962479BC34B21AA68344C748A395E'>
+            <properties context=''>
+              <relation connection='textscan.1j9aw6w0si1elk14yrxhh1slltc0' name='skincare_dashboard_data.csv' table='[skincare_dashboard_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='string' name='brand' ordinal='0' />
+                  <column datatype='string' name='product_name' ordinal='1' />
+                  <column datatype='string' name='product_type' ordinal='2' />
+                  <column datatype='integer' name='price' ordinal='3' />
+                  <column datatype='real' name='rating' ordinal='4' />
+                  <column datatype='integer' name='restricted_ingredient_count' ordinal='5' />
+                  <column datatype='integer' name='cmr_count' ordinal='6' />
+                  <column datatype='string' name='has_restricted_ingredient' ordinal='7' />
+                  <column datatype='string' name='has_cmr' ordinal='8' />
+                  <column datatype='real' name='restricted_pct' ordinal='9' />
+                  <column datatype='real' name='cmr_pct' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Top 10 Skincare Brands by CMR Exposure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='skincare_dashboard_data' name='federated.1yz5yek1u3762a129vih91aof7g6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yz5yek1u3762a129vih91aof7g6'>
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column caption='Cmr Count' datatype='integer' name='[cmr_count]' role='measure' type='quantitative' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cmr_count]' derivation='Sum' name='[sum:cmr_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yz5yek1u3762a129vih91aof7g6].[none:brand:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([cmr_count])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1yz5yek1u3762a129vih91aof7g6].[none:brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1yz5yek1u3762a129vih91aof7g6].[none:brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f0e7ea</color>
+                <color>#efdee4</color>
+                <color>#eed5dd</color>
+                <color>#edccd7</color>
+                <color>#ecc4d1</color>
+                <color>#ebbbcb</color>
+                <color>#eab2c5</color>
+                <color>#e9aabf</color>
+                <color>#e8a1b8</color>
+                <color>#e799b3</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]' />
+              <text column='[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]</rows>
+        <cols>[federated.1yz5yek1u3762a129vih91aof7g6].[none:brand:nk]</cols>
+      </table>
+      <simple-id uuid='{C90FBC04-3162-4650-991F-C9358F163588}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97856' id='7' param='horz' type-v2='layout-flow' w='99002' x='499' y='1072'>
+            <zone h='97856' id='5' type-v2='layout-basic' w='89027' x='499' y='1072'>
+              <zone h='97856' id='3' name='Top 10 Skincare Brands by CMR Exposure' w='89027' x='499' y='1072'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97856' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9975' x='89526' y='1072'>
+              <zone h='10858' id='8' name='Top 10 Skincare Brands by CMR Exposure' pane-specification-id='0' param='[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]' type-v2='color' w='9975' x='89526' y='1072'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97856' id='9' param='vert' type-v2='layout-flow' w='99002' x='499' y='1072'>
+                <zone fixed-size='280' h='97856' id='3' is-fixed='true' name='Top 10 Skincare Brands by CMR Exposure' w='89027' x='499' y='1072'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10858' id='8' name='Top 10 Skincare Brands by CMR Exposure' pane-specification-id='0' param='[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]' type-v2='color' w='9975' x='89526' y='1072'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FAEFBCA3-2F9F-4381-8D6A-8E5B6B6A94FC}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Top 10 Skincare Brands by CMR Exposure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yz5yek1u3762a129vih91aof7g6].[sum:cmr_count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yz5yek1u3762a129vih91aof7g6].[ctd:has_restricted_ingredient:qk]</field>
+            <field>[federated.1yz5yek1u3762a129vih91aof7g6].[none:brand:nk]</field>
+            <field>[federated.1yz5yek1u3762a129vih91aof7g6].[none:has_cmr:nk]</field>
+            <field>[federated.1yz5yek1u3762a129vih91aof7g6].[none:has_restricted_ingredient:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{35567988-9723-4B76-B2F5-3B3E526FB651}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Top 10 Skincare Brands by CMR Exposure'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{3268BE64-54C5-4186-851A-26A73F6D48D5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 Skincare Brands by CMR Exposure' width='192'>
+      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
+      qtsMa8pX1AAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
