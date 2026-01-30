@@ -113,7 +113,9 @@ ________________________________________
 📁 Repository Structure
 ├── data/
 │   ├── raw/
+
 │   │   └── datasets_sources/
+
 │   │
 │   └── processed/
 │       ├── sephora_dashboard_data/
